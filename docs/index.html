@@ -90,19 +90,6 @@
             left: 6.5%;
             z-index: 1;
         }
-        /*
-        .rect-b {
-            background-color: #6f9ead; 
-            width: 100vw; Ocupa 100% da largura da tela  a6a6a6
-            height: 135px;
-            position: absolute;
-            top: 0;
-            left: 0; Ajuste para começar da borda esquerda 
-            z-index: 0;
-        }
-        */
-
-
         .text-block {
             position: absolute;
             left: 7.2%;
@@ -115,7 +102,6 @@
             line-height: 1.6;
         }
 
-        /* Moldura no lado direito da tela */
         .image-frame {
             position: fixed;
             top: 50%;
@@ -141,6 +127,97 @@
         .slide-image.active {
             display: block;
         }
+
+    @media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .logo {
+        position: relative;
+        width: 15vw;
+        height: 15vw; /* altura proporcional à largura */
+        margin: 20px 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: -70vh;
+        left: -18.5vh;
+    }
+
+    h2 {
+        font-size: 10vw; 
+        position: relative; 
+        top: -14.5vh;  
+        left: -1vh;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+
+    .text-block {
+        position: relative;
+        left: 0;
+        top: 18vh;
+        transform: none;
+        text-align: center;
+        font-size: 2vw; 
+        line-height: 1.4;
+        margin: 10px 0;
+    }
+
+    .text-block p {
+        font-size: 3.5vw; /* ajuste o tamanho que quiser */
+    }
+
+    .text-block p img {
+        width: 5vw; /* reduz o tamanho do ícone junto com o texto */
+        height: auto;
+    }
+
+    .image-frame {
+        position: relative;
+        width: 105%;
+        height: auto;
+        top: -2vh;
+        right: 0;
+        transform: none;
+        margin: 20px 0;
+    }
+
+    .slide-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .download-btn {
+        position: relative;
+        left: 0;
+        top: 50vh;
+        width: 45%;
+        padding: 2vw 0;
+        font-size: 5vw;
+        gap: 2vw;
+        margin: 20px 0;
+        justify-content: center;
+    }
+
+    .download-btn .arrow {
+        font-size: 9vw;
+        transform: none;
+        margin-left:-0.5vh;
+        margin-bottom: 0.5vh;
+    }
+
+    .download-btn .divider {
+        height: 10vw;
+        width: 0.5vw;
+    }
+}
 
     </style>
 </head>
