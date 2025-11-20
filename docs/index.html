@@ -140,13 +140,13 @@
     .logo {
         position: relative;
         width: 15vw;
-        height: 15vw; /* altura proporcional à largura */
+        height: 15vw; 
         margin: 20px 0;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        top: -70vh;
-        left: -18.5vh;
+        top: -65vh;
+        left: -17vh;
     }
 
     h2 {
@@ -161,7 +161,7 @@
 
     .text-block {
         position: relative;
-        left: 0;
+        left: -2vh;
         top: 18vh;
         transform: none;
         text-align: center;
@@ -172,6 +172,7 @@
 
     .text-block p {
         font-size: 3.5vw; /* ajuste o tamanho que quiser */
+        gap:8px;
     }
 
     .text-block p img {
@@ -197,7 +198,7 @@
     .download-btn {
         position: relative;
         left: 0;
-        top: 50vh;
+        top: 45vh;
         width: 45%;
         padding: 2vw 0;
         font-size: 5vw;
@@ -223,7 +224,11 @@
 </head>
 <body>
     <div class="text-block">
-        <p><img src="./checkbox.png" alt="checkbox" width="40" height="40"> <strong>Learn</strong> about colour blindness</p>
+<p>
+    <span class="icon"><img src="./checkbox.png" alt="checkbox" width="40" height="40"></span>
+    <strong class="title">Learn</strong>
+    <span class="rest-text">about colour blindness</span>
+</p>
         <p><img src="./checkbox.png" alt="checkbox" width="40" height="40"> <strong>Experience</strong> how colour-blind people see</p>
         <p><img src="./checkbox.png" alt="checkbox" width="40" height="40"> <strong>Adjust</strong> your screen for better vision</p>
         <p><img src="./checkbox.png" alt="checkbox" width="40" height="40"> <strong>Challenge</strong> yourself with a colour vision test</p>
